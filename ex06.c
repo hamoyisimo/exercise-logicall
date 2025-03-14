@@ -1,15 +1,16 @@
 #include <stdio.h>
 int main ()
 {
-    int age ; 
-    int i ;
-    float s ;
-    printf("enter age : ");
-    scanf("%d",&age);
-    s = 0;
-    for ( i = 1 ; i <= age ; i++)
-    
-        s = s +(500 + i * 3);
-    
-    printf ("la somme est : %.2f dh",s);
+    float m = 1000000 ; 
+    float a = 500000;
+    int nbr_ans ;
+    nbr_ans = 0;
+    while (a <= m)
+     
+       {
+             m = m + 50000;
+            a = a+(a * 0.08);
+            nbr_ans++;
+       }  
+   printf("agadir dipassera marrakesh apres %d ans :",nbr_ans);
 }
