@@ -1,26 +1,20 @@
 #include<stdio.h>
 int main ()
 {
-    int l , c , i , j;
+    int l , i ,j;
 
      printf("enter lines : ");
     scanf("%d",&l);
-    printf("enter colone : ");
-    scanf("%d",&c);
-
     for ( i = 1 ; i <= l ; i++)
     {  
-        for (j = 1; j <= c ; j++)
+        for(j = 1 ; j <= l-i ;j++)
         {
-            if ( i == 1  || j == 1 || i == l || j == c || i == j || j ==l - i +1)
-        printf("*  ");
-        else
-        printf("   ");
+            printf("   ");
+        }
+        for(j =1 ; j <= l ;j++)
+        {
+            printf("*  ");
         }
         printf("\n");
     }
-
-   
-
-    
 }
